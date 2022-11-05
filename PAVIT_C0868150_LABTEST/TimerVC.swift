@@ -10,13 +10,11 @@ import UIKit
 class TimerVC: UIViewController {
 
     
+    @IBOutlet weak var countdownTimer: UIDatePicker!
+    @IBOutlet weak var Cancelbtn: UIButton!
+    @IBOutlet weak var startbtn: UIButton!
     
-    @IBOutlet weak var CountdownTimer: UIDatePicker!
-    
-    @IBOutlet weak var CancelBtn: UIButton!
-    
-    
-    @IBOutlet weak var StartBtn: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

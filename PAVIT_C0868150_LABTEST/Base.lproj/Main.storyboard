@@ -3,12 +3,13 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--StopWatch-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="StopWatchVC" id="BYZ-38-t0r" customClass="ViewController" customModule="PAVIT_C0868150_LABTEST" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,32 +84,14 @@
                                     <action selector="lapReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vwu-sk-Ncr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJy-lS-bbl">
-                                <rect key="frame" x="222" y="712" width="142" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Timer"/>
-                                <connections>
-                                    <action selector="TimerBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yga-qq-3TJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYI-WQ-yVV">
-                                <rect key="frame" x="26" y="712" width="142" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="StopWatch"/>
-                                <connections>
-                                    <action selector="StopWatchBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="148-fo-aff"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="StopWatch" selectedImage="stopwatch" catalog="system" id="y4y-rj-N9R">
+                        <imageReference key="image" image="stopwatch" catalog="system" symbolScale="large"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="DHc-zC-Z7d"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -120,9 +103,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1967.175572519084" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1851" y="1288"/>
         </scene>
-        <!--TimerVC-->
+        <!--Timer-->
         <scene sceneID="mWc-LA-TZJ">
             <objects>
                 <viewController storyboardIdentifier="TimerVC" id="weX-Hj-DUw" customClass="TimerVC" sceneMemberID="viewController">
@@ -159,51 +142,34 @@
                         <viewLayoutGuide key="safeArea" id="s2l-Gi-xtE"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Timer" selectedImage="timer" catalog="system" id="bZf-rq-kvR">
+                        <imageReference key="image" image="timer" catalog="system" symbolScale="large"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1e-4C-iFn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2794.6564885496182" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1784" y="436"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uYb-ui-ySp">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yaH-kh-zam" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="timer" catalog="system" id="zh5-gC-slj">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zh5-gC-slj">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="backgroundImage" image="timer" catalog="system" symbolScale="large"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Jjp-fc-O3C" kind="relationship" relationship="viewControllers" id="PSf-oi-XjL"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="OMv-gY-Lfa"/>
+                        <segue destination="weX-Hj-DUw" kind="relationship" relationship="viewControllers" id="d3n-0z-7XC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABK-gH-anU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.74045801526717" y="3.5211267605633805"/>
-        </scene>
-        <!--Timer-->
-        <scene sceneID="Nvk-qa-iEe">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jjp-fc-O3C" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Timer" image="stopwatch" catalog="system" selectedImage="timer" id="DRL-rg-QG7">
-                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="70" vertical="1"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZI7-tT-Tsc">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZPu-CA-SDz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C4E-SY-ct9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1040.4580152671756" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="201" y="833"/>
         </scene>
     </scenes>
     <resources>

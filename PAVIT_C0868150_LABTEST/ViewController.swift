@@ -117,22 +117,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
-    @IBAction func TimerBtn(_ sender: UIButton) {
-        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let TimerVC = mainSB.instantiateViewController(withIdentifier: "TimerVC")
-        
-        navigationController?.pushViewController(TimerVC, animated: true)
-        
-        
-    }
-    
-    @IBAction func StopWatchBtn(_ sender: UIButton) {
-        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let StopWatchVC = mainSB.instantiateViewController(withIdentifier: "StopWatchVC")
-        
-        navigationController?.pushViewController(StopWatchVC, animated: true)
-    }
-    
     
 }
 
