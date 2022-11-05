@@ -14,6 +14,7 @@
 		33BEE2E82915C92E009A1D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33BEE2E72915C92E009A1D44 /* Assets.xcassets */; };
 		33BEE2EB2915C92E009A1D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BEE2E92915C92E009A1D44 /* LaunchScreen.storyboard */; };
 		33BEE2F32915D5CB009A1D44 /* StopWatchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BEE2F22915D5CB009A1D44 /* StopWatchTableCell.swift */; };
+		33BEE2F72915E916009A1D44 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BEE2F62915E916009A1D44 /* TimerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		33BEE2EA2915C92E009A1D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33BEE2EC2915C92E009A1D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33BEE2F22915D5CB009A1D44 /* StopWatchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchTableCell.swift; sourceTree = "<group>"; };
+		33BEE2F62915E916009A1D44 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				33BEE2E92915C92E009A1D44 /* LaunchScreen.storyboard */,
 				33BEE2EC2915C92E009A1D44 /* Info.plist */,
 				33BEE2F22915D5CB009A1D44 /* StopWatchTableCell.swift */,
+				33BEE2F62915E916009A1D44 /* TimerVC.swift */,
 			);
 			path = PAVIT_C0868150_LABTEST;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33BEE2F32915D5CB009A1D44 /* StopWatchTableCell.swift in Sources */,
+				33BEE2F72915E916009A1D44 /* TimerVC.swift in Sources */,
 				33BEE2E32915C92C009A1D44 /* ViewController.swift in Sources */,
 				33BEE2DF2915C92C009A1D44 /* AppDelegate.swift in Sources */,
 				33BEE2E12915C92C009A1D44 /* SceneDelegate.swift in Sources */,
